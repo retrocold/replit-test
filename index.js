@@ -7,6 +7,7 @@ app.get("/", (req, res) => {
   res.json({
     status: "OK",
     cores: CPU.length + " cores",
+    test: "some string",
     cpus: CPU[0],
     env: process.env.SOME_ENV || "none",
   });
